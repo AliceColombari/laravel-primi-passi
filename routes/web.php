@@ -18,6 +18,15 @@ Route::get('/', function () {
     $data = [
                 "stringa"=>'Hello World!'
             ];
-            
-    return view('home', $data);
+
+    return view("home", $data);
+});
+
+
+Route::get('/product', function () {
+    return view("product");
+});
+
+Route::get('/contact', function () {
+    return view("contact");
 });
